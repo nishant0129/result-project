@@ -3,7 +3,7 @@ const app = express();
 
 require("dotenv").config();
 const dbConfig = require("./config/dbConfig");
-dbConfig();
+
 app.use(express.json());
 const employeeRoute = require("./routes/employeeRoute");
 const studentRoute = require("./routes/studentRoute");

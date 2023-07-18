@@ -3,6 +3,7 @@ const app = express();
 
 require("dotenv").config();
 const dbConfig = require("./config/dbConfig");
+dbConfig();
 app.use(express.json());
 const employeeRoute = require("./routes/employeeRoute");
 const studentRoute = require("./routes/studentRoute");
@@ -15,7 +16,7 @@ app.use("/api/results/", resultsRoute);
 
 
 const path = require("path");
-const port = process.env.PORT
+const port = process.env.PORT||5000
 
 
 app.use(express.static(path.join(__dirname,'./client/build')))

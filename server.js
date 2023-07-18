@@ -15,7 +15,7 @@ app.use("/api/results/", resultsRoute);
 
 
 const path = require("path");
-const port = process.env.PORT || 5000;
+const port = process.env.PORT
 
 
 app.use(express.static(path.join(__dirname,'./client/build')))

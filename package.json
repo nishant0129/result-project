@@ -2,7 +2,7 @@
   "name": "resulttrack",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "engines" : {
     "npm": "8.18.0",
     "node": "16.17.0"
